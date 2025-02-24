@@ -10,15 +10,40 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Customer.png" />
+    <None Remove="Dasboardrivergreen.png" />
+    <None Remove="Dashboard.png" />
+    <None Remove="Document.png" />
+    <None Remove="Employee.png" />
+    <None Remove="Inventory.png" />
     <None Remove="MainwindiowBlack &amp; Blue Minimalist Modern.png" />
     <None Remove="Mainwindiwriverfreen.png" />
     <None Remove="MainwindowBackground.png" />
+    <None Remove="Profile.png" />
+    <None Remove="Report.png" />
+    <None Remove="Reserve.png" />
+    <None Remove="Room.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Customer.png" />
+    <Resource Include="Dasboardrivergreen.png" />
+    <Resource Include="Dashboard.png" />
+    <Resource Include="Document.png" />
+    <Resource Include="Employee.png" />
+    <Resource Include="Inventory.png" />
     <Resource Include="MainwindiowBlack &amp; Blue Minimalist Modern.png" />
     <Resource Include="Mainwindiwriverfreen.png" />
     <Resource Include="MainwindowBackground.png" />
+    <Resource Include="Profile.png" />
+    <Resource Include="Report.png" />
+    <Resource Include="Reserve.png" />
+    <Resource Include="Room.png" />
   </ItemGroup>
 
 </Project>

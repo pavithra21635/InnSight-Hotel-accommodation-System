@@ -53,7 +53,7 @@
 
             <Button Grid.Row="2" Content="Sign In" FontSize="20" Width="290" Height="51" HorizontalAlignment="Left" Margin="96,283,0,94" Foreground="White" BorderBrush="{x:Null}" Panel.ZIndex="5"  Click="Button_Click" Grid.RowSpan="6" Background="#FF337CF5" VerticalAlignment="Center"/>
             <TextBlock Text="Forget Password?" HorizontalAlignment="Left" Margin="271,226,0,0" Grid.Row="2" VerticalAlignment="Top" RenderTransformOrigin="0.993,0.694" FontSize="18" FontWeight="Bold" Foreground="#FF435EBB" Cursor="Hand" TextDecorations="Underline" />
-            <Image Margin="0,0,432,120" Source="/Customer.png" Stretch="Fill"/>
+            
 
 
         </Grid>
