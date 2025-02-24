@@ -9,4 +9,16 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="MainwindiowBlack &amp; Blue Minimalist Modern.png" />
+    <None Remove="Mainwindiwriverfreen.png" />
+    <None Remove="MainwindowBackground.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="MainwindiowBlack &amp; Blue Minimalist Modern.png" />
+    <Resource Include="Mainwindiwriverfreen.png" />
+    <Resource Include="MainwindowBackground.png" />
+  </ItemGroup>
+
 </Project>
