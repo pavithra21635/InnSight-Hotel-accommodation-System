@@ -1,0 +1,100 @@
+﻿<UserControl x:Class="Hotel_accommodation_System.Dashboard_Content"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Hotel_accommodation_System"
+             mc:Ignorable="d" 
+                                       d:DesignHeight="450" d:DesignWidth="800" Background="White">
+
+
+    <StackPanel Margin="10,20,20,20">
+        <!-- Reservation Summary Section -->
+        <Border Background="#FF4464D4" CornerRadius="10" Width="870" Height="120">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="31*"/>
+                    <RowDefinition Height="19*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Margin="0,0,0,6" Grid.RowSpan="2">
+                    <TextBlock Text="Reservation Summary" FontSize="18" FontWeight="Bold" 
+                           Foreground="White" Margin="34,10,15,0" FontFamily="Segoe UI Semibold"/>
+                    <Button Content="Allocate a Room" Grid.Column="1" Width="150" Height="40"
+                        Background="#A34EC9" Foreground="White" FontWeight="Bold" 
+                        Margin="630,-23,0,30" HorizontalAlignment="Center" Grid.RowSpan="2"/>
+                </StackPanel>
+
+                <!-- Summary Boxes -->
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="40,44,20,0" Grid.RowSpan="2">
+                    <Border Background="White" CornerRadius="5" Padding="5,5,9,5" Margin="0,5,5,5" Height="50" Width="160">
+                        <StackPanel>
+                            <TextBlock Text="Confirmed" FontSize="12" Foreground="Black" Margin="5,0,0,0"/>
+                            <TextBlock Text="Reservation" FontSize="15" FontWeight="Bold" Foreground="Black" Margin="5,0,0,0"/>
+                            <TextBlock Text="28" FontSize="23" FontWeight="Bold" Foreground="#3B6CC9" Margin="110,-32,0,0"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Background="White" CornerRadius="5" Padding="5,5,9,5" Margin="40,5,5,5" Height="50" Width="160">
+                        <StackPanel>
+                            <TextBlock Text="Today's" FontSize="12" Foreground="Black" Margin="5,0,0,0"/>
+                            <TextBlock Text="Check-in" FontSize="15" FontWeight="Bold" Foreground="Black" Margin="5,0,0,0"/>
+                            <TextBlock Text="18" FontSize="23" FontWeight="Bold" Foreground="#3B6CC9" Margin="110,-32,0,0"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Background="White" CornerRadius="5" Padding="5,5,9,5" Margin="40,5,5,5" Height="50" Width="160">
+                        <StackPanel>
+                            <TextBlock Text="Today's" FontSize="12" Foreground="Black" Margin="5,0,0,0"/>
+                            <TextBlock Text="Available" FontSize="15" FontWeight="Bold" Foreground="Black" Margin="5,0,0,0"/>
+                            <TextBlock Text="30" FontSize="23" FontWeight="Bold" Foreground="#3B6CC9" Margin="110,-32,0,0"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- Booking Details Section -->
+        <Border Background="White" CornerRadius="10" BorderThickness="1" Padding="10" Margin="0,20,0,0" Height="339" Width="1016" RenderTransformOrigin="0.5,0.5">
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.154"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-1.197"/>
+                </TransformGroup>
+            </Border.RenderTransform>
+            <StackPanel>
+                <!-- Booking Details Header -->
+
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,2,0,0" VerticalAlignment="Top">
+
+                    <TextBlock Text="Booking Details" FontSize="20" FontWeight="Bold" Margin="43,0,0,10"/>
+                    <TextBox x:Name="txtSearch" Width="200" Height="30" FontSize="14" Margin="420,0,0,0" />
+                    <Button x:Name="btnSearch" Content="Search" Width="80" Height="30" 
+        Margin="10,0,0,0" Background="#3B82F6" Foreground="White" Click="btnSearch_Click" />
+                </StackPanel>
+
+
+
+                <DataGrid Name="dgBookingDetails" AutoGenerateColumns="False" Margin="43,10,94,39" Width="932" Height="224">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Booking ID" Binding="{Binding ReID}" Width="90" />
+                        <DataGridTextColumn Header="Booking Date" Binding="{Binding Re_date}" Width="130" />
+                        <DataGridTextColumn Header="Check In" Binding="{Binding check_in}" Width="130" />
+                        <DataGridTextColumn Header="Check Out" Binding="{Binding check_out}" Width="130" />
+                        <DataGridTextColumn Header="Room ID" Binding="{Binding RoID}" Width="90" />
+                        <DataGridTextColumn Header="Remarks" Binding="{Binding Remarks}" Width="100" />
+                        <DataGridTextColumn Header="No_Person" Binding="{Binding No_Person}" Width="90" />
+                        <DataGridTextColumn Header="Customer ID" Binding="{Binding CusID}" Width="90" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+        </Border>
+    </StackPanel>
+</UserControl>

@@ -23,7 +23,7 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="71*"/>
             </Grid.ColumnDefinitions>
-            <Image Source="/Images/MainwindiowBlack &amp; Blue Minimalist Modern.png" HorizontalAlignment="Left" Height="98" Margin="16,6,0,0" VerticalAlignment="Top" Width="99"/>
+            <Image Source="/Black &amp; Blue Minimalist Modern Initial Font Logo 1.png" HorizontalAlignment="Left" Height="98" Margin="16,6,0,0" VerticalAlignment="Top" Width="99"/>
             <Image Source="/Dasboardrivergreen.png" HorizontalAlignment="Left" Height="56" Margin="120,0,0,0" VerticalAlignment="Center" Width="329"/>
             <StackPanel Width="191" Orientation="Horizontal" Height="50" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="996,0,0,0"/>
 

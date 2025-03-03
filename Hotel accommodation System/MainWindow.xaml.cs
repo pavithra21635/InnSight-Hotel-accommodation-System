@@ -82,4 +82,9 @@ public partial class MainWindow : Window
     {
         return password.Length > 7;
     }
+
+    private void Username_TextChanged(object sender, TextChangedEventArgs e)
+    {
+
+    }
 }

@@ -22,7 +22,7 @@ namespace Hotel_accommodation_System
         public Dashboardxaml()
         {
             InitializeComponent();
-         //   ContentArea.Content = new Dashboard_Content();
+          ContentArea.Content = new Dashboard_Content();
         }
 
         private void profile_MouseDoubleClick(object sender, MouseButtonEventArgs e)
@@ -32,7 +32,8 @@ namespace Hotel_accommodation_System
 
         private void dashboard_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-
+            // Reset the dashboard content
+            ContentArea.Content = new Dashboard_Content();
         }
 
         private void Click_Room(object sender, MouseButtonEventArgs e)
@@ -61,6 +62,16 @@ namespace Hotel_accommodation_System
         }
 
         private void RoomReservation_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void MenuListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void LogoutButton_Click(object sender, RoutedEventArgs e)
         {
 
         }
