@@ -43,7 +43,26 @@ namespace Hotel_accommodation_System
 
         private void employees_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
+            LoadEmployeePage();
+        }
 
+        private void LoadEmployeePage()
+        {
+            Employee employeePage = new Employee();
+
+            // Subscribe to the event for navigating to InventoryDetails.xaml
+            employeePage.NavigateToEmployeeDetails += LoadEmployeeDetailsPage;
+
+            ContentArea.Content = employeePage;
+        }
+        private void LoadEmployeeDetailsPage()
+        {
+            EmployeeDetails detailsPage = new EmployeeDetails();
+
+            // Subscribe to event to go back to Inventory.xaml
+            detailsPage.NavigateBackToEmployee += LoadEmployeePage;
+
+            ContentArea.Content = detailsPage;
         }
 
         private void customers_MouseDoubleClick(object sender, MouseButtonEventArgs e)
