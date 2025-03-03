@@ -98,7 +98,7 @@ namespace Hotel_accommodation_System
 
         private void reports_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-
+            ContentArea.Content = new Reports();
         }
 
         private void RoomReservation_MouseDoubleClick(object sender, MouseButtonEventArgs e)
@@ -113,7 +113,12 @@ namespace Hotel_accommodation_System
 
         private void LogoutButton_Click(object sender, RoutedEventArgs e)
         {
+            // Open the MainWindow
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
 
+            // Close the current Dashboard window
+            this.Close();
         }
     }
 }

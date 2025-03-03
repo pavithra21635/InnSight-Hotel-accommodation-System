@@ -22,6 +22,7 @@
     <None Remove="MainwindowBackground.png" />
     <None Remove="Profile.png" />
     <None Remove="Report.png" />
+    <None Remove="reportsection.png" />
     <None Remove="Reserve.png" />
     <None Remove="Room.png" />
   </ItemGroup>
@@ -44,6 +45,7 @@
     <Resource Include="MainwindowBackground.png" />
     <Resource Include="Profile.png" />
     <Resource Include="Report.png" />
+    <Resource Include="reportsection.png" />
     <Resource Include="Reserve.png" />
     <Resource Include="Room.png" />
   </ItemGroup>
