@@ -10,6 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Black &amp; Blue Minimalist Modern Initial Font Logo 1.png" />
     <None Remove="Customer.png" />
     <None Remove="Dasboardrivergreen.png" />
     <None Remove="Dashboard.png" />
@@ -31,6 +32,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Black &amp; Blue Minimalist Modern Initial Font Logo 1.png" />
     <Resource Include="Customer.png" />
     <Resource Include="Dasboardrivergreen.png" />
     <Resource Include="Dashboard.png" />
