@@ -103,7 +103,7 @@ namespace Hotel_accommodation_System
 
         private void RoomReservation_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-
+            ContentArea.Content = new ReserveRoom();
         }
 
         private void MenuListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
