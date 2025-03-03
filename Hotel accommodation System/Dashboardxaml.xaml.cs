@@ -53,8 +53,29 @@ namespace Hotel_accommodation_System
 
         private void inventories_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-
+            LoadInventoryPage();
         }
+
+        private void LoadInventoryPage()
+        {
+            Inventory inventoryPage = new Inventory();
+
+            // Subscribe to the event for navigating to InventoryDetails.xaml
+            inventoryPage.NavigateToInventoryDetails += LoadInventoryDetailsPage;
+
+            ContentArea.Content = inventoryPage;
+        }
+
+        private void LoadInventoryDetailsPage()
+        {
+            InventoryDetails detailsPage = new InventoryDetails();
+
+            // Subscribe to event to go back to Inventory.xaml
+            detailsPage.NavigateBackToInventory += LoadInventoryPage;
+
+            ContentArea.Content = detailsPage;
+        }
+
 
         private void reports_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
