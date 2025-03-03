@@ -67,7 +67,7 @@ namespace Hotel_accommodation_System
 
         private void customers_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-
+            ContentArea.Content = new Customer();
         }
 
         private void inventories_MouseDoubleClick(object sender, MouseButtonEventArgs e)
