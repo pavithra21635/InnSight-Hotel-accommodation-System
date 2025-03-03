@@ -38,7 +38,7 @@ namespace Hotel_accommodation_System
 
         private void Click_Room(object sender, MouseButtonEventArgs e)
         {
-
+            ContentArea.Content = new Room();
         }
 
         private void employees_MouseDoubleClick(object sender, MouseButtonEventArgs e)
