@@ -5,8 +5,57 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Hotel_accommodation_System"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+           Title="Login" Height="650" Width="1200" WindowStartupLocation="CenterScreen">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="800"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Column="0">
+            <UniformGrid>
+                <Image HorizontalAlignment="Left" Height="638" VerticalAlignment="Top" Width="735" Source="/MainwindowBackground.png" Stretch="Fill"/>
+            </UniformGrid>
+        </Border>
+        <Grid Margin="722,10,0,0" Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="76.02"/>
+                <RowDefinition Height="307.98"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
+
+            <Image Source="/Mainwindiwriverfreen.png"
+        HorizontalAlignment="Left" Margin="79,18,0,302" Width="340" Panel.ZIndex="19" OpacityMask="Black" Grid.Row="1" Grid.RowSpan="2"/>
+            <Image Source="/MainwindiowBlack &amp; Blue Minimalist Modern.png"
+       HorizontalAlignment="Center" Margin="0,44,0,54" Width="146" Panel.ZIndex="19" OpacityMask="Black" Grid.RowSpan="2"/>
+
+
+            <TextBlock  Grid.Row="2"  Text="Username" Margin="78,36,0,245" HorizontalAlignment="Left" FontSize="18" FontStyle="Normal" FontWeight="Regular"/>
+            <TextBox x:Name="Username" Grid.Row="2" Width="338" HorizontalAlignment="Center" Margin="0,78,0,190" SelectionOpacity="-4" FontSize="18" FontFamily="Segoe UI" TextChanged="Username_TextChanged"  Background="White" UndoLimit="10" RenderTransformOrigin="0.5,0.5" BorderBrush="#FF030510" Cursor="Hand">
+                <TextBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="9"/>
+                    </TransformGroup>
+                </TextBox.RenderTransform>
+            </TextBox>
+
+
+            <TextBlock Grid.Row="2" Text="Password" Margin="78,131,0,150" HorizontalAlignment="Left" RenderTransformOrigin="0.383,-0.406" FontSize="18" FontStyle="Normal" FontWeight="Regular"/>
+            <PasswordBox x:Name="Password" Grid.Row="2" Width="340" HorizontalAlignment="Left" Margin="79,175,0,93" Cursor="Hand" SelectionOpacity="-4"  AutomationProperties.Name="Enter Password" BorderBrush="#FF030510" Height="39.98"/>
+
+            <Button Grid.Row="2" Content="Sign In" FontSize="20" Width="290" Height="51" HorizontalAlignment="Left" Margin="96,283,0,94" Foreground="White" BorderBrush="{x:Null}" Panel.ZIndex="5"  Click="Button_Click" Grid.RowSpan="6" Background="#FF337CF5" VerticalAlignment="Center"/>
+            <TextBlock Text="Forget Password?" HorizontalAlignment="Left" Margin="271,226,0,0" Grid.Row="2" VerticalAlignment="Top" RenderTransformOrigin="0.993,0.694" FontSize="18" FontWeight="Bold" Foreground="#FF435EBB" Cursor="Hand" TextDecorations="Underline" />
+            
+
+
+        </Grid>
     </Grid>
 </Window>
