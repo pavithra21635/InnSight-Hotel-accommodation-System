@@ -114,8 +114,11 @@ namespace Hotel_accommodation_System
 
 
             // 🏨 DRAW HOTEL LOGO (Optional)
-          //  string logoPath = "C:\\Users\\pavit\\source\\repos\\Hotel accomodation\\Hotel_accomodation_system\\nibm222comp_E_Hotel_accomodation_system\\Black & Blue Minimalist Modern Initial Font Logo 12.png"; // Replace with actual path
-            string logoPath = "\\MainwindiowBlack & Blue Minimalist Modern.png"; // Replace with actual path
+            //  string logoPath = "C:\\Users\\pavit\\source\\repos\\Hotel accomodation\\Hotel_accomodation_system\\nibm222comp_E_Hotel_accomodation_system\\Black & Blue Minimalist Modern Initial Font Logo 12.png"; // Replace with actual path
+            // string logoPath = "\\MainwindiowBlack & Blue Minimalist Modern.png"; // Replace with actual path
+
+            string logoPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "MainwindiowBlack & Blue Minimalist Modern.png");
+
 
 
 

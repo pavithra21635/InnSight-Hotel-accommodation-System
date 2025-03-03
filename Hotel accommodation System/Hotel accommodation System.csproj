@@ -46,7 +46,9 @@
     <Resource Include="Document.png" />
     <Resource Include="Employee.png" />
     <Resource Include="Inventory.png" />
-    <Resource Include="MainwindiowBlack &amp; Blue Minimalist Modern.png" />
+    <Content Include="MainwindiowBlack &amp; Blue Minimalist Modern.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Resource Include="Mainwindiwriverfreen.png" />
     <Resource Include="MainwindowBackground.png" />
     <Resource Include="Profile.png" />
