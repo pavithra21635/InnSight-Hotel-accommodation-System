@@ -11,6 +11,8 @@
 
   <ItemGroup>
     <None Remove="Black &amp; Blue Minimalist Modern Initial Font Logo 1.png" />
+    <None Remove="confir.png" />
+    <None Remove="Confirmation.png" />
     <None Remove="Customer.png" />
     <None Remove="Dasboardrivergreen.png" />
     <None Remove="Dashboard.png" />
@@ -22,28 +24,36 @@
     <None Remove="MainwindowBackground.png" />
     <None Remove="Profile.png" />
     <None Remove="Report.png" />
+    <None Remove="reportsection.png" />
     <None Remove="Reserve.png" />
     <None Remove="Room.png" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.1" />
+    <PackageReference Include="PDFsharp" Version="6.1.1" />
+    <PackageReference Include="PdfSharpCore" Version="1.3.65" />
     <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Black &amp; Blue Minimalist Modern Initial Font Logo 1.png" />
+    <Resource Include="confir.png" />
+    <Resource Include="Confirmation.png" />
     <Resource Include="Customer.png" />
     <Resource Include="Dasboardrivergreen.png" />
     <Resource Include="Dashboard.png" />
     <Resource Include="Document.png" />
     <Resource Include="Employee.png" />
     <Resource Include="Inventory.png" />
-    <Resource Include="MainwindiowBlack &amp; Blue Minimalist Modern.png" />
+    <Content Include="MainwindiowBlack &amp; Blue Minimalist Modern.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Resource Include="Mainwindiwriverfreen.png" />
     <Resource Include="MainwindowBackground.png" />
     <Resource Include="Profile.png" />
     <Resource Include="Report.png" />
+    <Resource Include="reportsection.png" />
     <Resource Include="Reserve.png" />
     <Resource Include="Room.png" />
   </ItemGroup>

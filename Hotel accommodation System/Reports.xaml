@@ -1,0 +1,73 @@
+﻿<UserControl x:Class="Hotel_accommodation_System.Reports"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Hotel_accommodation_System"
+             mc:Ignorable="d" 
+                      d:DesignHeight="450" d:DesignWidth="800" Background="White">
+
+    <Grid Background="#191C3281">
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="477" Margin="42,28,0,0" VerticalAlignment="Top" Width="853" Background="White" CornerRadius="10,10,10,10">
+            <Grid Margin="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!-- Title Bar -->
+                <Border Background="#4A63E7" Height="50" VerticalAlignment="Top">
+                    <TextBlock Text="Reports" Foreground="White" FontSize="18" FontWeight="Bold" VerticalAlignment="Center" Padding="15"/>
+                </Border>
+
+                <!-- Report Buttons Layout -->
+                <Grid Margin="20,70,20,20" Height="350">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Customer Reports -->
+                    <Border Grid.Row="0" Grid.Column="0" Background="#F0F2FF" Padding="20" CornerRadius="10" Margin="10,10,10,10" Width="265" MouseDown="CustomerReports_Click">
+                        <StackPanel HorizontalAlignment="Center">
+                            <Image Source="/reportsection.png" Height="50" Width="50"/>
+                            <TextBlock Text="Customer Reports" FontWeight="Bold" FontSize="14" TextAlignment="Center" Margin="0,3,0,0"/>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- Employee Reports -->
+                    <Border Grid.Row="0" Grid.Column="1" Background="#F0F2FF" Padding="20" CornerRadius="10" Margin="10" Height="140" Width="265" MouseDown="EmployeeReports_Click">
+                        <StackPanel HorizontalAlignment="Center">
+                            <Image Source="/reportsection.png" Height="50" Width="50"/>
+                            <TextBlock Text="Employee Reports" FontWeight="Bold" FontSize="14" TextAlignment="Center" Margin="0,3,0,0"/>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- Inventory Reports -->
+                    <Border Grid.Row="1" Grid.Column="0" Background="#F0F2FF" Padding="20" CornerRadius="10" Margin="10,36,10,-16" Height="140" Width="265" MouseDown="InventoryReports_Click">
+                        <StackPanel HorizontalAlignment="Center">
+                            <Image Source="/reportsection.png" Height="50" Width="50"/>
+                            <TextBlock Text="Inventory Reports" FontWeight="Bold" FontSize="14" TextAlignment="Center" Margin="0,3,0,0"/>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- Room Details Report -->
+                    <Border Grid.Row="1" Grid.Column="1" Background="#F0F2FF" Padding="20" CornerRadius="10" Margin="10,42,10,-22" Width="265" MouseDown="RoomDetailsReports_Click">
+                        <StackPanel HorizontalAlignment="Center">
+                            <Image Source="/reportsection.png" Height="50" Width="50"/>
+                            <TextBlock Text="Room Details Report" FontWeight="Bold" FontSize="14" TextAlignment="Center" Margin="0,3,0,0"/>
+                        </StackPanel>
+                    </Border>
+                </Grid>
+
+
+
+            </Grid>
+        </Border>
+
+    </Grid>
+</UserControl>
