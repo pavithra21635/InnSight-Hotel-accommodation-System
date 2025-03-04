@@ -27,7 +27,7 @@ namespace Hotel_accommodation_System
 
         private void profile_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-
+            ContentArea.Content = new Profile();
         }
 
         private void dashboard_MouseDoubleClick(object sender, MouseButtonEventArgs e)
