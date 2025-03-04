@@ -98,9 +98,37 @@ namespace Hotel_accommodation_System
 
         private void reports_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            ContentArea.Content = new Reports();
+            // ContentArea.Content = new Reports();
+            var reportsPage = new Reports();
+
+            // Subscribe to navigation events
+            reportsPage.NavigateToCustomerReports += LoadCustomerReportsPage;
+            reportsPage.NavigateToEmployeeReports += LoadEmployeeReportsPage;
+            reportsPage.NavigateToInventoryReports += LoadInventoryReportsPage;
+            reportsPage.NavigateToRoomDetailsReports += LoadRoomDetailsReportsPage;
+
+            ContentArea.Content = reportsPage;
         }
 
+        private void LoadCustomerReportsPage()
+        {
+            ContentArea.Content = new CustomerReports(); // Replace with your UserControl
+        }
+
+        private void LoadEmployeeReportsPage()
+        {
+            ContentArea.Content = new EmployeeReports(); // Replace with your UserControl
+        }
+
+        private void LoadInventoryReportsPage()
+        {
+            ContentArea.Content = new InventoryReports(); // Replace with your UserControl
+        }
+
+        private void LoadRoomDetailsReportsPage()
+        {
+            ContentArea.Content = new RoomDetailsReports(); // Replace with your UserControl
+        }
         private void RoomReservation_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             ContentArea.Content = new ReserveRoom();
