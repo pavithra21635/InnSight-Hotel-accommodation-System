@@ -32,7 +32,7 @@
                     </Grid.ColumnDefinitions>
 
                     <!-- Customer Reports -->
-                    <Border Grid.Row="0" Grid.Column="0" Background="#F0F2FF" Padding="20" CornerRadius="10" Margin="10,10,10,10" Width="265">
+                    <Border Grid.Row="0" Grid.Column="0" Background="#F0F2FF" Padding="20" CornerRadius="10" Margin="10,10,10,10" Width="265" MouseDown="CustomerReports_Click">
                         <StackPanel HorizontalAlignment="Center">
                             <Image Source="/reportsection.png" Height="50" Width="50"/>
                             <TextBlock Text="Customer Reports" FontWeight="Bold" FontSize="14" TextAlignment="Center" Margin="0,3,0,0"/>
@@ -40,7 +40,7 @@
                     </Border>
 
                     <!-- Employee Reports -->
-                    <Border Grid.Row="0" Grid.Column="1" Background="#F0F2FF" Padding="20" CornerRadius="10" Margin="10" Height="140" Width="265">
+                    <Border Grid.Row="0" Grid.Column="1" Background="#F0F2FF" Padding="20" CornerRadius="10" Margin="10" Height="140" Width="265" MouseDown="EmployeeReports_Click">
                         <StackPanel HorizontalAlignment="Center">
                             <Image Source="/reportsection.png" Height="50" Width="50"/>
                             <TextBlock Text="Employee Reports" FontWeight="Bold" FontSize="14" TextAlignment="Center" Margin="0,3,0,0"/>
@@ -48,7 +48,7 @@
                     </Border>
 
                     <!-- Inventory Reports -->
-                    <Border Grid.Row="1" Grid.Column="0" Background="#F0F2FF" Padding="20" CornerRadius="10" Margin="10,36,10,-16" Height="140" Width="265">
+                    <Border Grid.Row="1" Grid.Column="0" Background="#F0F2FF" Padding="20" CornerRadius="10" Margin="10,36,10,-16" Height="140" Width="265" MouseDown="InventoryReports_Click">
                         <StackPanel HorizontalAlignment="Center">
                             <Image Source="/reportsection.png" Height="50" Width="50"/>
                             <TextBlock Text="Inventory Reports" FontWeight="Bold" FontSize="14" TextAlignment="Center" Margin="0,3,0,0"/>
@@ -56,7 +56,7 @@
                     </Border>
 
                     <!-- Room Details Report -->
-                    <Border Grid.Row="1" Grid.Column="1" Background="#F0F2FF" Padding="20" CornerRadius="10" Margin="10,42,10,-22" Width="265">
+                    <Border Grid.Row="1" Grid.Column="1" Background="#F0F2FF" Padding="20" CornerRadius="10" Margin="10,42,10,-22" Width="265" MouseDown="RoomDetailsReports_Click">
                         <StackPanel HorizontalAlignment="Center">
                             <Image Source="/reportsection.png" Height="50" Width="50"/>
                             <TextBlock Text="Room Details Report" FontWeight="Bold" FontSize="14" TextAlignment="Center" Margin="0,3,0,0"/>

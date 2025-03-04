@@ -20,9 +20,33 @@ namespace Hotel_accommodation_System
     /// </summary>
     public partial class Reports : UserControl
     {
+        public event Action NavigateToCustomerReports;
+        public event Action NavigateToEmployeeReports;
+        public event Action NavigateToInventoryReports;
+        public event Action NavigateToRoomDetailsReports;
         public Reports()
         {
             InitializeComponent();
+        }
+
+        private void CustomerReports_Click(object sender, MouseButtonEventArgs e)
+        {
+            NavigateToCustomerReports?.Invoke();
+        }
+
+        private void EmployeeReports_Click(object sender, MouseButtonEventArgs e)
+        {
+            NavigateToEmployeeReports?.Invoke();
+        }
+
+        private void InventoryReports_Click(object sender, MouseButtonEventArgs e)
+        {
+            NavigateToInventoryReports?.Invoke();
+        }
+
+        private void RoomDetailsReports_Click(object sender, MouseButtonEventArgs e)
+        {
+            NavigateToRoomDetailsReports?.Invoke();
         }
     }
 }
