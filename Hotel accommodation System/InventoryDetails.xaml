@@ -21,7 +21,7 @@
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="250,110,0,0" VerticalAlignment="Top">
             <TextBox x:Name="txtSearch" Width="200" Height="30" FontSize="14" />
             <Button x:Name="btnSearch" Content="Search" Width="80" Height="30" 
-                Margin="10,0,0,0" Background="#3B82F6" Foreground="White" Click="btnSearch_Click_1" />
+                Background="#3B82F6" Foreground="White" Click="btnSearch_Click_1" />
         </StackPanel>
 
 
