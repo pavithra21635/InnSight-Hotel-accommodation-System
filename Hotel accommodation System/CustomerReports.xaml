@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:Hotel_accommodation_System"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="#FF732A2A">
+    <Grid Background="White">
             
     </Grid>
 </UserControl>
