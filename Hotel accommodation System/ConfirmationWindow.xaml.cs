@@ -40,47 +40,7 @@ namespace Hotel_accommodation_System
 
         private void Print_Click(object sender, RoutedEventArgs e)
         {
-            //// Get the Desktop path
-            //string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            //string filename = Path.Combine(desktopPath, "BookingInvoice.pdf");
-
-            //// Create a new PDF document
-            //PdfDocument document = new PdfDocument();
-            //document.Info.Title = "Booking Invoice";
-
-            //// Create an empty page
-            //PdfPage page = document.AddPage();
-            //XGraphics gfx = XGraphics.FromPdfPage(page);
-
-            //// Set up fonts
-            //XFont titleFont = new XFont("Verdana", 22, XFontStyle.Bold);
-            //XFont headerFont = new XFont("Verdana", 14, XFontStyle.Bold);
-            //XFont bodyFont = new XFont("Verdana", 12, XFontStyle.Regular);
-
-            //// Draw Invoice Title
-            //gfx.DrawString("Booking Confirmation Invoice", titleFont, XBrushes.Black,
-            //    new XRect(0, 30, page.Width, page.Height), XStringFormats.TopCenter);
-
-            //// Draw Booking Details
-            //int yPos = 80;
-            //int lineSpacing = 30; // Space between each line
-
-            //gfx.DrawString($"Booking ID: {txt_BookingID.Text.Replace("Booking ID: ", "")}", headerFont, XBrushes.Black, new XPoint(50, yPos)); yPos += lineSpacing;
-            //gfx.DrawString($"Date / Time: {txt_BookingDate.Text.Replace("Date / Time ", "")}", bodyFont, XBrushes.Black, new XPoint(50, yPos)); yPos += lineSpacing;
-            //gfx.DrawString($"Customer Name: {txt_CustomerName.Text.Replace("Customer Name: ", "")}", bodyFont, XBrushes.Black, new XPoint(50, yPos)); yPos += lineSpacing;
-            //gfx.DrawString($"Mobile: {txt_CustomerMobile.Text.Replace("Mobile: ", "")}", bodyFont, XBrushes.Black, new XPoint(50, yPos)); yPos += lineSpacing;
-            //gfx.DrawString($"Room Type: {txt_RoomType.Text.Replace("Room Type: ", "")}", bodyFont, XBrushes.Black, new XPoint(50, yPos)); yPos += lineSpacing;
-            //gfx.DrawString($"No. of Persons: {txt_NoOfPersons.Text.Replace("No. of Persons: ", "")}", bodyFont, XBrushes.Black, new XPoint(50, yPos)); yPos += lineSpacing;
-            //gfx.DrawString($"Check-in Date: {txt_ReservedDate.Text.Replace("Checkin Date: ", "")}", bodyFont, XBrushes.Black, new XPoint(50, yPos)); yPos += lineSpacing;
-            //gfx.DrawString($"Checkout Date: {txt_CheckoutDate.Text.Replace("Checkout Date: ", "")}", bodyFont, XBrushes.Black, new XPoint(50, yPos)); yPos += lineSpacing;
-            //gfx.DrawString($"Total Price: {txt_Price.Text.Replace("Total : ", "")}", headerFont, XBrushes.Red, new XPoint(50, yPos)); yPos += lineSpacing;
-
-            //// Save the document
-            //document.Save(filename);
-
-            //// Confirm success
-            //MessageBox.Show($"PDF Invoice saved successfully at: {filename}", "Invoice Generated", MessageBoxButton.OK, MessageBoxImage.Information);
-
+           
             // Get Desktop Path for saving
             string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
             string filename = Path.Combine(desktopPath, "BookingInvoice.pdf");
@@ -172,7 +132,47 @@ namespace Hotel_accommodation_System
             // Show success message
             MessageBox.Show($"PDF Invoice saved successfully at: {filename}", "Invoice Generated", MessageBoxButton.OK, MessageBoxImage.Information);
         }
-        
+
+        //// Get the Desktop path
+        //string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+        //string filename = Path.Combine(desktopPath, "BookingInvoice.pdf");
+
+        //// Create a new PDF document
+        //PdfDocument document = new PdfDocument();
+        //document.Info.Title = "Booking Invoice";
+
+        //// Create an empty page
+        //PdfPage page = document.AddPage();
+        //XGraphics gfx = XGraphics.FromPdfPage(page);
+
+        //// Set up fonts
+        //XFont titleFont = new XFont("Verdana", 22, XFontStyle.Bold);
+        //XFont headerFont = new XFont("Verdana", 14, XFontStyle.Bold);
+        //XFont bodyFont = new XFont("Verdana", 12, XFontStyle.Regular);
+
+        //// Draw Invoice Title
+        //gfx.DrawString("Booking Confirmation Invoice", titleFont, XBrushes.Black,
+        //    new XRect(0, 30, page.Width, page.Height), XStringFormats.TopCenter);
+
+        //// Draw Booking Details
+        //int yPos = 80;
+        //int lineSpacing = 30; // Space between each line
+
+        //gfx.DrawString($"Booking ID: {txt_BookingID.Text.Replace("Booking ID: ", "")}", headerFont, XBrushes.Black, new XPoint(50, yPos)); yPos += lineSpacing;
+        //gfx.DrawString($"Date / Time: {txt_BookingDate.Text.Replace("Date / Time ", "")}", bodyFont, XBrushes.Black, new XPoint(50, yPos)); yPos += lineSpacing;
+        //gfx.DrawString($"Customer Name: {txt_CustomerName.Text.Replace("Customer Name: ", "")}", bodyFont, XBrushes.Black, new XPoint(50, yPos)); yPos += lineSpacing;
+        //gfx.DrawString($"Mobile: {txt_CustomerMobile.Text.Replace("Mobile: ", "")}", bodyFont, XBrushes.Black, new XPoint(50, yPos)); yPos += lineSpacing;
+        //gfx.DrawString($"Room Type: {txt_RoomType.Text.Replace("Room Type: ", "")}", bodyFont, XBrushes.Black, new XPoint(50, yPos)); yPos += lineSpacing;
+        //gfx.DrawString($"No. of Persons: {txt_NoOfPersons.Text.Replace("No. of Persons: ", "")}", bodyFont, XBrushes.Black, new XPoint(50, yPos)); yPos += lineSpacing;
+        //gfx.DrawString($"Check-in Date: {txt_ReservedDate.Text.Replace("Checkin Date: ", "")}", bodyFont, XBrushes.Black, new XPoint(50, yPos)); yPos += lineSpacing;
+        //gfx.DrawString($"Checkout Date: {txt_CheckoutDate.Text.Replace("Checkout Date: ", "")}", bodyFont, XBrushes.Black, new XPoint(50, yPos)); yPos += lineSpacing;
+        //gfx.DrawString($"Total Price: {txt_Price.Text.Replace("Total : ", "")}", headerFont, XBrushes.Red, new XPoint(50, yPos)); yPos += lineSpacing;
+
+        //// Save the document
+        //document.Save(filename);
+
+        //// Confirm success
+        //MessageBox.Show($"PDF Invoice saved successfully at: {filename}", "Invoice Generated", MessageBoxButton.OK, MessageBoxImage.Information);
 
         private void Confirm_Click(object sender, RoutedEventArgs e)
         {

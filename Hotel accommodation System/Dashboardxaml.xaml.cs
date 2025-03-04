@@ -113,21 +113,42 @@ namespace Hotel_accommodation_System
         private void LoadCustomerReportsPage()
         {
             ContentArea.Content = new CustomerReports(); // Replace with your UserControl
+
+            //var customerReportsPage = new CustomerReports();
+            //customerReportsPage.NavigateBackToReports += LoadReportsPage;
+            //ContentArea.Content = customerReportsPage;
         }
 
         private void LoadEmployeeReportsPage()
         {
             ContentArea.Content = new EmployeeReports(); // Replace with your UserControl
+
+            //var employeeReportsPage = new EmployeeReports();
+            //employeeReportsPage.NavigateBackToReports += LoadReportsPage;
+            //ContentArea.Content = employeeReportsPage;
         }
 
         private void LoadInventoryReportsPage()
         {
             ContentArea.Content = new InventoryReports(); // Replace with your UserControl
+
+            //var inventoryReportsPage = new InventoryReports();
+            //inventoryReportsPage.NavigateBackToReports += LoadReportsPage;
+            //ContentArea.Content = inventoryReportsPage;
         }
 
         private void LoadRoomDetailsReportsPage()
         {
-            ContentArea.Content = new RoomDetailsReports(); // Replace with your UserControl
+            //ContentArea.Content = new RoomDetailsReports(); // Replace with your UserControl
+            var roomDetailsReportsPage = new RoomDetailsReports();
+            roomDetailsReportsPage.NavigateBackToReports += LoadReportsPage;
+            ContentArea.Content = roomDetailsReportsPage;
+        }
+
+        // Method to load Reports page again
+        private void LoadReportsPage()
+        {
+            reports_MouseDoubleClick(null, null); // Reuse your existing method
         }
         private void RoomReservation_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
