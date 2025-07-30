@@ -28,54 +28,54 @@ public partial class MainWindow : Window
     private void Button_Click(object sender, RoutedEventArgs e)
     {
 
-        //string username = Username.Text;
-        //string password = Password.Password;
+        string username = Username.Text;
+        string password = Password.Password;
 
-        //// Validate empty fields
-        //if (string.IsNullOrEmpty(username))
-        //{
-        //    MessageBox.Show("Username is empty.");
-        //    return;
-        //}
-        //if (string.IsNullOrEmpty(password))
-        //{
-        //    MessageBox.Show("Password is empty.");
-        //    return;
-        //}
+        // Validate empty fields
+        if (string.IsNullOrEmpty(username))
+        {
+            MessageBox.Show("Username is empty.");
+            return;
+        }
+        if (string.IsNullOrEmpty(password))
+        {
+            MessageBox.Show("Password is empty.");
+            return;
+        }
 
-        //if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
-        //{
-        //    MessageBox.Show("User Name and Password are empty.");
-        //    return;
-        //}
-        //try
-        //{
-        //    sqlcon.Open();
-        //    string query = "SELECT COUNT(1) FROM Login WHERE Username=@Username AND Password=@Password";
-        //    SqlCommand sqlCmd = new SqlCommand(query, sqlcon);
-        //    sqlCmd.Parameters.AddWithValue("@Username", username);
-        //    sqlCmd.Parameters.AddWithValue("@Password", password);
-        //    int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
+        if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+        {
+            MessageBox.Show("User Name and Password are empty.");
+            return;
+        }
+        try
+        {
+            sqlcon.Open();
+            string query = "SELECT COUNT(1) FROM Login WHERE Username=@Username AND Password=@Password";
+            SqlCommand sqlCmd = new SqlCommand(query, sqlcon);
+            sqlCmd.Parameters.AddWithValue("@Username", username);
+            sqlCmd.Parameters.AddWithValue("@Password", password);
+            int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
 
-        //    if (count == 1)
-        //    {
-        Dashboardxaml dashboard = new Dashboardxaml();
+            if (count == 1)
+            {
+                Dashboardxaml dashboard = new Dashboardxaml();
         dashboard.Show();
         this.Close();
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("Invalid username or password.");
-        //    }
-        //}
-        //catch (Exception ex)
-        //{
-        //    MessageBox.Show("Error: " + ex.Message);
-        //}
-        //finally
-        //{
-        //    sqlcon.Close();
-        //}
+            }
+            else
+            {
+                MessageBox.Show("Invalid username or password.");
+            }
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show("Error: " + ex.Message);
+        }
+        finally
+        {
+            sqlcon.Close();
+        }
     }
 
     private bool IsValidPassword(string password)
