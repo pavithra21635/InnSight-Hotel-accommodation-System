@@ -17,7 +17,7 @@ namespace Hotel_accommodation_System
 
 
         public static readonly string ConnectionString =
-    @"Data Source=PAVITHRA432;Initial Catalog=HotelAccomodationSystem;Integrated Security=True;TrustServerCertificate=True";
+    @"Data Source=YOURDATASOURCE;Initial Catalog=HotelAccomodationSystem;Integrated Security=True;TrustServerCertificate=True";
 
 
         public Connection() // Default Constructor

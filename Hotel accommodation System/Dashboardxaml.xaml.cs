@@ -27,7 +27,7 @@ namespace Hotel_accommodation_System
 
         private void profile_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-
+            ContentArea.Content = new Profile();
         }
 
         private void dashboard_MouseDoubleClick(object sender, MouseButtonEventArgs e)
@@ -130,11 +130,11 @@ namespace Hotel_accommodation_System
 
         private void LoadInventoryReportsPage()
         {
-            ContentArea.Content = new InventoryReports(); // Replace with your UserControl
+            //  ContentArea.Content = new InventoryReports(); // Replace with your UserControl
 
-            //var inventoryReportsPage = new InventoryReports();
-            //inventoryReportsPage.NavigateBackToReports += LoadReportsPage;
-            //ContentArea.Content = inventoryReportsPage;
+            var inventoryReportsPage = new InventoryReports();
+            inventoryReportsPage.NavigateBackToReports += LoadReportsPage;
+            ContentArea.Content = inventoryReportsPage;
         }
 
         private void LoadRoomDetailsReportsPage()
