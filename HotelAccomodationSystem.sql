@@ -73,11 +73,11 @@ CREATE TABLE Customer (
 );
 
 INSERT INTO Customer VALUES 
-('C001','Dilsahn','Galle','922586089v','0775263522','sehelyamadumani@gmail.com','2024-05-31','2024-05-31'),
-('C002','Kamal','Kakirawa','822586089v','0714254569','sehelyamadumani@gmail.com','2024-05-11','2024-05-31'),
-('C003','Nimal','Kurunagala','962365089v','0725896458','sehelyamadumani@gmail.com','2024-05-12','2024-05-31'),
-('C004','Ravindu','Colombo3', '922486089v','0702485632','sehelyamadumani@gmail.com','2024-05-13','2024-05-31'),
-('C005','Pasan','Maradana','922167089v','0777145878','sehelyamadumani@gmail.com','2024-05-14','2024-05-31');
+('C001','Dilsahn','Galle','922586089v','0775263522','sehei@gmail.com','2024-05-31','2024-05-31'),
+('C002','Kamal','Kakirawa','822586089v','0714254569','sehani@gmail.com','2024-05-11','2024-05-31'),
+('C003','Nimal','Kurunagala','962365089v','0725896458','sehelyi@gmail.com','2024-05-12','2024-05-31'),
+('C004','Ravindu','Colombo3', '922486089v','0702485632','sehel@gmail.com','2024-05-13','2024-05-31'),
+('C005','Pasan','Maradana','922167089v','0777145878','sehe@gmail.com','2024-05-14','2024-05-31');
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 DROP TABLE Employee;
@@ -96,13 +96,13 @@ CREATE TABLE Employee (
 );
 
 INSERT INTO Employee VALUES 
-('E001','Dilsahn','0775263522','922586089v','Galle','sehelyamadumani@gmail.com','Chef','2024-05-31','2024-05-31'),
-('E002','Kamal','0714254569','822586089v','Kakirawa','sehelyamadumani@gmail.com','Hotel Manager','2024-05-11','2024-05-31'),
-('E003','Nimal','0725896458','962365089v','Kurunegala','sehelyamadumani@gmail.com','Waiter/Waitress','2024-05-12','2024-05-31'),
-('E004','Ravindu','0702485632', '922486089v','Galle','sehelyamadumani@gmail.com','Security Officer','2024-05-13','2024-05-31'),
-('E005','Pasan','0777145878','922167089v','Maradana','sehelyamadumani@gmail.com','Maintenance Staff','2024-05-14','2024-05-31'),
-('E006','Basiru','0777135878','922177089v','Maradana','sehelyamadumani@gmail.com','Admin','2024-05-14','2024-05-31'),
-('E007','nasiru','0787135878','942177089v','Maradana','sehelyamadumani@gmail.com','Cashier','2024-05-14','2024-05-31');
+('E001','Dilsahn','0775263522','922586089v','Galle','sehelya@gmail.com','Chef','2024-05-31','2024-05-31'),
+('E002','Kamal','0714254569','822586089v','Kakirawa','sehe@gmail.com','Hotel Manager','2024-05-11','2024-05-31'),
+('E003','Nimal','0725896458','962365089v','Kurunegala','sehe@gmail.com','Waiter/Waitress','2024-05-12','2024-05-31'),
+('E004','Ravindu','0702485632', '922486089v','Galle','seh@gmail.com','Security Officer','2024-05-13','2024-05-31'),
+('E005','Pasan','0777145878','922167089v','Maradana','sehely@gmail.com','Maintenance Staff','2024-05-14','2024-05-31'),
+('E006','Basiru','0777135878','922177089v','Maradana','seh@gmail.com','Admin','2024-05-14','2024-05-31'),
+('E007','nasiru','0787135878','942177089v','Maradana','sehel@gmail.com','Cashier','2024-05-14','2024-05-31');
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
