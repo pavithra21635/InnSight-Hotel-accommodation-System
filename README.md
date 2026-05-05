@@ -1,6 +1,9 @@
 
 ## Description
-Hotel accommodation System that handles employee , customers, rooms, reservation, and inventories, reports.
+
+A high-performance application for hotel resource planning and guest management. 
+Engineered with C# and WPF (Windows Presentation Foundation) using the MVVM architectural pattern. 
+This system streamlines complex front-desk operations, real-time room availability tracking, and automated billing through a responsive, data-driven desktop interface, handles employee , customers, rooms, reservation, and inventories, reports.
 Minimize operational inefficiencies.
 
 ## Features
